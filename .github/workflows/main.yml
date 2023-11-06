@@ -16,4 +16,4 @@ jobs:
             workflows: ''
             owner-repo: 'anshu-makkar/101'
             default-branch: 'patch-1'
-            number-of-days: 30
+            number-of-days: 1
