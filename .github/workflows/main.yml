@@ -2,9 +2,9 @@ name: test-action
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "patch-1" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "patch-1" ]
 
 jobs:
    test: 
@@ -15,5 +15,5 @@ jobs:
           with:
             workflows: 'test'
             owner-repo: 'mpoddar-lab/101'
-            default-branch: 'main'
+            default-branch: 'master'
             number-of-days: 30
