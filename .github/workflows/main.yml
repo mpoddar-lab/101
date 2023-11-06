@@ -11,9 +11,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Test another repo
-          uses: samsmithnz/deployment-frequency@main
+          uses: anshu-makkar/deployment-frequency@main
           with:
             workflows: ''
             owner-repo: 'anshu-makkar/101'
             default-branch: 'patch-1'
-            number-of-days: 1
+            number-of-days: 2
