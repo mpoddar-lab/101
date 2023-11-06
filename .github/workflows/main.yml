@@ -1,7 +1,20 @@
-- name: Test another repo
-  uses: samsmithnz/deployment-frequency@main
-  with:
-    workflows: 'CI/CD'
-    owner-repo: 'samsmithnz/DevOpsMetrics'
-    default-branch: 'main'
-    number-of-days: 30
+name: test-action
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+   test: 
+      runs-on: ubuntu-latest
+      steps:
+        - name: Test another repo
+          uses: samsmithnz/deployment-frequency@main
+          with:
+            workflows: 'test'
+            owner-repo: 'mpoddar-lab/101'
+            default-branch: 'main'
+            number-of-days: 30
