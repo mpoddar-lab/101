@@ -13,7 +13,7 @@ jobs:
         - name: Test another repo
           uses: anshu-makkar/deployment-frequency@main
           with:
-            workflows: ''
+            workflows: 'test'
             owner-repo: 'anshu-makkar/101'
             default-branch: 'patch-1'
             number-of-days: 2
