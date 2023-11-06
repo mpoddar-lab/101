@@ -2,19 +2,18 @@ name: test-action
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "patch-1" ]
   pull_request:
-    branches: [ "master" ]
-  workflow_dispatch:
+    branches: [ "patch-1" ]
 
 jobs:
    test: 
       runs-on: ubuntu-latest
       steps:
         - name: Test another repo
-          uses: samsmithnz/deployment-frequency@main
+          uses: anshu-makkar/deployment-frequency@main
           with:
             workflows: 'test'
-            owner-repo: 'mpoddar-lab/101'
-            default-branch: 'main'
-            number-of-days: 30
+            owner-repo: 'anshu-makkar/101'
+            default-branch: 'patch-1'
+            number-of-days: 2
