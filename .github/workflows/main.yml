@@ -13,7 +13,7 @@ jobs:
         - name: Test another repo
           uses: samsmithnz/deployment-frequency@main
           with:
-            workflows: 'test'
+            workflows: ''
             owner-repo: 'mpoddar-lab/101'
             default-branch: 'master'
             number-of-days: 30
