@@ -1,0 +1,7 @@
+- name: Test another repo
+  uses: samsmithnz/deployment-frequency@main
+  with:
+    workflows: 'CI/CD'
+    owner-repo: 'samsmithnz/DevOpsMetrics'
+    default-branch: 'main'
+    number-of-days: 30
